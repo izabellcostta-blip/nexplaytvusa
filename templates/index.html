@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NexPlay TV USA — Entretenimento onde você estiver</title>
+  <meta name="description" content="NexPlay TV USA — planos flexíveis, teste grátis e atendimento em português.">
+  <link rel="stylesheet" href="{{ url_for("static", filename="styles.css") }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><img src="{{ url_for("static", filename="assets/logo.png") }}" alt="NexPlay TV USA"></a>
+    <nav>
+      <a href="#planos" data-pt="Planos" data-en="Plans">Planos</a>
+      <a href="#vantagens" data-pt="Vantagens" data-en="Benefits">Vantagens</a>
+      <a href="#revenda" data-pt="Revendedores" data-en="Resellers">Revendedores</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+    </nav>
+    <button class="lang" id="langBtn">🇧🇷 PT</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow" data-pt="NEXPLAY TV USA" data-en="NEXPLAY TV USA">NEXPLAY TV USA</span>
+        <h1 data-pt="Seu entretenimento.<br><span>Do seu jeito.</span>" data-en="Your entertainment.<br><span>Your way.</span>">Seu entretenimento.<br><span>Do seu jeito.</span></h1>
+        <p data-pt="Planos flexíveis, atendimento em português e teste grátis para você conhecer a experiência NexPlay." data-en="Flexible plans, Portuguese-speaking support and a free trial so you can experience NexPlay.">Planos flexíveis, atendimento em português e teste grátis para você conhecer a experiência NexPlay.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#planos" data-pt="Ver planos" data-en="View plans">Ver planos</a>
+          <a class="btn ghost" href="https://wa.me/12064396261?text=Ol%C3%A1%20NexPlay%20TV%20USA!%20Quero%20saber%20sobre%20o%20teste%20gr%C3%A1tis." target="_blank" rel="noopener" data-pt="Pedir teste grátis" data-en="Request free trial">Pedir teste grátis</a>
+        </div>
+        <div class="trust">
+          <span>✓ <span data-pt="Atendimento em português" data-en="Portuguese-speaking support">Atendimento em português</span></span>
+          <span>✓ <span data-pt="Pix e cartão" data-en="Pix and card">Pix e cartão</span></span>
+          <span>✓ <span data-pt="Teste grátis 6h ou 12h" data-en="6h or 12h free trial">Teste grátis 6h ou 12h</span></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="glow"></div>
+        <div class="screen">
+          <div class="screen-top"><span>NEXPLAY</span><span>USA</span></div>
+          <div class="screen-content">
+            <div class="play">▶</div>
+            <strong>ENTERTAINMENT</strong>
+            <small>YOUR WAY</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vantagens">
+      <div class="section-head">
+        <span class="eyebrow">NEXPLAY</span>
+        <h2 data-pt="Uma experiência simples e direta." data-en="A simple, direct experience.">Uma experiência simples e direta.</h2>
+      </div>
+      <div class="feature-grid">
+        <article><b>01</b><h3 data-pt="Planos flexíveis" data-en="Flexible plans">Planos flexíveis</h3><p data-pt="Escolha mensal, trimestral, semestral ou anual." data-en="Choose monthly, quarterly, semiannual or annual.">Escolha mensal, trimestral, semestral ou anual.</p></article>
+        <article><b>02</b><h3 data-pt="Teste grátis" data-en="Free trial">Teste grátis</h3><p data-pt="Fale conosco e solicite seu teste de 6h ou 12h." data-en="Contact us and request your 6h or 12h trial.">Fale conosco e solicite seu teste de 6h ou 12h.</p></article>
+        <article><b>03</b><h3 data-pt="Suporte em português" data-en="Portuguese support">Suporte em português</h3><p data-pt="Atendimento pelo WhatsApp para tirar suas dúvidas." data-en="WhatsApp support to answer your questions.">Atendimento pelo WhatsApp para tirar suas dúvidas.</p></article>
+      </div>
+    </section>
+
+    <section class="section plans" id="planos">
+      <div class="section-head">
+        <span class="eyebrow">PLANOS</span>
+        <h2 data-pt="Escolha seu plano" data-en="Choose your plan">Escolha seu plano</h2>
+        <p data-pt="Valores em dólares. Escolha entre a opção sem conteúdo adulto ou com conteúdo adulto, conforme disponibilidade e autorização." data-en="Prices in USD. Choose the option without adult content or with adult content, subject to availability and authorization.">Valores em dólares. Escolha entre a opção sem conteúdo adulto ou com conteúdo adulto, conforme disponibilidade e autorização.</p>
+      </div>
+      <div class="plan-grid">
+        <article class="plan"><h3>Mensal</h3><div class="price-row"><div><small>SEM ADULTO</small><strong>US$ 10</strong></div><div><small>COM ADULTO</small><strong>US$ 15</strong></div></div><a class="btn plan-btn" href="https://wa.me/12064396261?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Mensal." target="_blank" rel="noopener">Assinar</a></article>
+        <article class="plan"><h3>Trimestral</h3><div class="price-row"><div><small>SEM ADULTO</small><strong>US$ 25</strong></div><div><small>COM ADULTO</small><strong>US$ 40</strong></div></div><a class="btn plan-btn" href="https://wa.me/12064396261?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Trimestral." target="_blank" rel="noopener">Assinar</a></article>
+        <article class="plan"><h3>Semestral</h3><div class="price-row"><div><small>SEM ADULTO</small><strong>US$ 55</strong></div><div><small>COM ADULTO</small><strong>US$ 85</strong></div></div><a class="btn plan-btn" href="https://wa.me/12064396261?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Semestral." target="_blank" rel="noopener">Assinar</a></article>
+        <article class="plan featured"><span class="badge" data-pt="MELHOR OFERTA" data-en="BEST OFFER">MELHOR OFERTA</span><h3>Anual</h3><div class="price-row"><div><small>SEM ADULTO</small><strong>US$ 90</strong></div><div><small>COM ADULTO</small><strong>US$ 100</strong></div></div><a class="btn plan-btn" href="https://wa.me/12064396261?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Anual." target="_blank" rel="noopener">Assinar</a></article>
+      </div>
+      <div class="trial"><div><span class="eyebrow">FREE TRIAL</span><h3 data-pt="Teste grátis de 6h ou 12h" data-en="6h or 12h free trial">Teste grátis de 6h ou 12h</h3><p data-pt="Quer conhecer antes de assinar? Chame no WhatsApp e consulte a disponibilidade do teste." data-en="Want to try before subscribing? Message us on WhatsApp to check trial availability.">Quer conhecer antes de assinar? Chame no WhatsApp e consulte a disponibilidade do teste.</p></div><a class="btn primary" href="https://wa.me/12064396261?text=Ol%C3%A1!%20Quero%20solicitar%20o%20teste%20gr%C3%A1tis%20de%206h%20ou%2012h." target="_blank" rel="noopener" data-pt="Solicitar teste" data-en="Request trial">Solicitar teste</a></div>
+    </section>
+
+    <section class="section reseller" id="revenda">
+      <div class="reseller-copy">
+        <span class="eyebrow">REVENDA</span>
+        <h2 data-pt="Quer saber mais sobre revenda?" data-en="Interested in reselling?">Quer saber mais sobre revenda?</h2>
+        <p data-pt="Conheça as modalidades disponíveis e fale diretamente com nossa equipe para receber valores e condições." data-en="Learn about the available options and talk directly to our team for pricing and terms.">Conheça as modalidades disponíveis e fale diretamente com nossa equipe para receber valores e condições.</p>
+        <a class="btn primary" href="https://wa.me/12064396261?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20revenda%20NexPlay%20TV%20USA." target="_blank" rel="noopener" data-pt="Falar no WhatsApp" data-en="Chat on WhatsApp">Falar no WhatsApp</a>
+      </div>
+      <div class="reseller-grid">
+        <div>PRÉ-PAGO</div><div>PÓS-PAGO</div><div>PAINEL MENSALISTA</div><div>PAINEL ILIMITADO</div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-head"><span class="eyebrow">FAQ</span><h2>Perguntas frequentes</h2></div>
+      <details><summary data-pt="Como solicito o teste grátis?" data-en="How do I request the free trial?">Como solicito o teste grátis?</summary><p data-pt="Clique em qualquer botão de teste e fale conosco pelo WhatsApp. A disponibilidade e duração do teste serão confirmadas no atendimento." data-en="Click a trial button and contact us on WhatsApp. Trial availability and duration will be confirmed by support.">Clique em qualquer botão de teste e fale conosco pelo WhatsApp. A disponibilidade e duração do teste serão confirmadas no atendimento.</p></details>
+      <details><summary data-pt="Quais formas de pagamento são aceitas?" data-en="Which payment methods are accepted?">Quais formas de pagamento são aceitas?</summary><p data-pt="Aceitamos Pix e cartão. Fale com o suporte para receber as instruções de pagamento." data-en="We accept Pix and card. Contact support for payment instructions.">Aceitamos Pix e cartão. Fale com o suporte para receber as instruções de pagamento.</p></details>
+      <details><summary data-pt="O atendimento é em português?" data-en="Is support available in Portuguese?">O atendimento é em português?</summary><p data-pt="Sim. Nosso suporte é realizado em português pelo WhatsApp." data-en="Yes. Support is available in Portuguese through WhatsApp.">Sim. Nosso suporte é realizado em português pelo WhatsApp.</p></details>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <img src="{{ url_for("static", filename="assets/logo.png") }}" alt="NexPlay TV USA">
+    <p>© 2026 NexPlay TV USA. Todos os direitos reservados.</p>
+    <a href="https://wa.me/12064396261" target="_blank" rel="noopener">WhatsApp: +1 (206) 439-6261</a>
+  </footer>
+  <a class="whatsapp" href="https://wa.me/12064396261?text=Ol%C3%A1%20NexPlay%20TV%20USA!" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+  <script src="{{ url_for("static", filename="script.js") }}"></script>
+</body>
+</html>
